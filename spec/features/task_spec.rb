@@ -27,11 +27,11 @@ RSpec.feature "TaskTest", type: :feature do
     last_task = Task.last
   end
 
-  # scenario "刪除資料" do
-  #   task = Task.create(title: "Task1", content: "Content1")
-  #   visit root_path
-  #   click_on "刪除"
+  scenario "刪除資料" do
+    task = Task.create(title: "Task1", content: "Content1")
+    visit root_path
+    click_on "刪除"
     
-  #   expect(Taks.count).to 
-  # end
+    expect(Task.count).to eq(0)
+  end
 end
