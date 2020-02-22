@@ -34,4 +34,13 @@ RSpec.feature "TaskTest", type: :feature do
     
     expect(Task.count).to eq(0)
   end
+
+  scenario "列表以時間顯示" do
+    task = Task.create(title: "Task1", content: "Content1", created_at: Time.now.yesterday)
+    task1 = Task.create(title: "Task2", content: "Content2", created_at: Time.now)
+    visit root_path
+    
+    expect(page).to have_content(task.title)
+    expect(page).to have_content(task1.title)
+  end
 end
