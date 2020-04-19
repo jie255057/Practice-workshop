@@ -1,0 +1,19 @@
+language: ruby
+rvm:
+- 2.7.0
+services:
+  - postgresql
+env:
+  - DB=pgsql
+before_script:
+  - psql -c 'create database Practice_workshop_test;' -U postgres
+install:
+  - bundle install
+cache:
+  bundler: true
+  directories:
+    - node_modules
+  yarn: true
+script:
+  - bundle exec rails db:create db:migrate RAILS_ENV=test
+  - bundle exec rspec
