@@ -1,9 +1,9 @@
 <%= form_with model: task do |f| %>
-  <%= f.label :title, '標題' %>
+  <%= f.label :title, t('view.title') %>
   <%= f.text_field :title %>
   <br>
-  <%= f.label :content, '內容' %>
+  <%= f.label :content, t('view.content') %>
   <%= f.text_area :content %>
   <br>
-  <%= f.submit '送出' %>
+  <%= f.submit t('button.create') %>
 <% end %>

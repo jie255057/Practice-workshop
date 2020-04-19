@@ -1,0 +1,9 @@
+zh-TW:
+  view:
+    title: 標題
+    edit: 編輯
+    destroy: 刪除
+    new: 新增任務
+    content: 內容
+  button:
+    create: 送出
