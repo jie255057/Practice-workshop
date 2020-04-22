@@ -28,5 +28,6 @@ RSpec.feature "TaskTest", type: :feature do
     click_on "刪除"
     
     expect(page).to have_text("資料已刪除")
+    expect(page).not_to have_text("Task1")
   end
 end
