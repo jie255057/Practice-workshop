@@ -27,6 +27,6 @@ RSpec.feature "TaskTest", type: :feature do
     visit root_path
     click_on "刪除"
     
-    expect(page).to have_text("")
+    expect(page).to have_text("資料已刪除")
   end
 end
