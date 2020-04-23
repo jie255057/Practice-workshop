@@ -9,6 +9,9 @@ before_script:
   - psql -c 'create database Practice_workshop_test;' -U postgres
 install:
   - bundle install
+  - nvm install node
+  - npm i -g yarn
+  - yarn
 cache:
   bundler: true
   directories:
