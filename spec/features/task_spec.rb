@@ -30,4 +30,18 @@ RSpec.feature "TaskTest", type: :feature do
     expect(page).to have_text("資料已刪除")
     expect(page).not_to have_text("Task1")
   end
+  
+  scenario "資料已建立時間顯示" do
+    Task.create(title: "Task1", content: "Content1")
+    Task.create(title: "Task2", content: "Content2")
+    visit root_path
+    
+    within 'tbody tr:nth-child(1)' do
+      expect(page).to have_content("Task2")
+    end
+
+    within 'tbody tr:nth-child(2)' do
+      expect(page).to have_content("Task1")
+    end
+  end
 end
