@@ -13,3 +13,5 @@
 4. git push heroku master
 5. heroku run bundle
 6. heroku run rails db:migrate
+
+Heroku <https://practice-workshop.herokuapp.com/>
