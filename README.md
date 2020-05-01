@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements
 
-Things you may want to cover:
+- Ruby 2.7.0
+- Rails 6
 
-* Ruby version
+## 部署步驟
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. heroku login 登入Heroku
+2. heroku create
+3. git remote -v 能看到 hook
+4. git push heroku master
+5. heroku run bundle
+6. heroku run rails db:migrate
