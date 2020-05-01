@@ -17,7 +17,7 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to tasks_path, notice:'新增成功'
     else
-      render :new, notice:'新增失敗'
+      render :new
     end
   end
 
