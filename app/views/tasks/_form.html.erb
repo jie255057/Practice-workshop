@@ -14,7 +14,7 @@
   <%= f.text_area :content %>
   <br>
   <%= f.label :updated_at, t('view.updated_at') %>
-  <%= f.datetime_local_field :updated_at, value: DateTime.current.midnight %>
+  <%= f.datetime_select :updated_at, value: DateTime.now %>
   <br>
   <%= f.submit t('button.create') %>
 <% end %>
