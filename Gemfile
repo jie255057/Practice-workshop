@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # use state aasm
-gem 'aasm', '~> 5.0', '>= 5.0.8'
+gem 'aasm', '~> 5.1', '>= 5.1.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
