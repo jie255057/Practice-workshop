@@ -25,6 +25,9 @@ gem 'jbuilder', '~> 2.7'
 # use state aasm
 gem 'aasm', '~> 5.1', '>= 5.1.1'
 
+# search gem
+gem 'ransack'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

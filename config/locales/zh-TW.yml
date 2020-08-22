@@ -4,6 +4,7 @@ zh-TW:
   end_time: 結束時間
   task_name: 任務名稱
   view:
+    aasm_state: 任務狀態
     content: 內容
     destroy: 刪除
     edit: 編輯
