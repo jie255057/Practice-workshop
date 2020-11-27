@@ -1,9 +1,12 @@
 zh-TW:
-  view:
-    title: 標題
-    edit: 編輯
-    destroy: 刪除
-    new: 新增任務
-    content: 內容
   button:
     create: 送出
+  end_time: 結束時間
+  task_name: 任務名稱
+  view:
+    content: 內容
+    destroy: 刪除
+    edit: 編輯
+    new: 新增任務
+    title: 標題
+    updated_at: 結束時間

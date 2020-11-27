@@ -44,4 +44,11 @@ RSpec.feature "TaskTest", type: :feature do
       expect(page).to have_content("Task1")
     end
   end
+
+  scenario "畫面顯示任務結束時間" do
+    Task.create(title: 'Task1', content: 'Content1', updated_at: '2020-08-20T00:06')
+    visit root_path
+
+    expect(page).to have_text('2020-08-20 00:06')
+  end
 end
