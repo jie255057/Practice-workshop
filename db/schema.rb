@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_08_22_064858) do
     t.string "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "aasm_state"
+    t.string "task_state"
   end
 
 end
